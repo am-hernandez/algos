@@ -12,3 +12,7 @@ If you would like to work on these problems yourself follow these steps:
 - use `npm run test` to run the tests
 
 Each problem is contained in its own folder with the correlating prompt, solution, and test script. Go to the respective folder to alter the solutions and tests.
+
+### Dependencies
+
+![Chai Badge](https://img.shields.io/badge/-Chai-_?style=plastic&logo=chai&labelColor=black&color=f8eed8)
