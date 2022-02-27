@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const tournamentWinner = require("./tournamentWinner");
 
-describe.only("tournamentWinner", () => {
+describe("tournamentWinner", () => {
   it("should return the correct winner of the tournament of animals", () => {
     const competitions = [
       ["Mice", "Pandas"],
