@@ -1,3 +1,5 @@
+// First Solution
+/*
 function tournamentWinner(competitions, results) {
   let tournamentIdx = 0;
   let leaderboard = {};
@@ -26,6 +28,34 @@ function tournamentWinner(competitions, results) {
     }
   }
   return champ;
+}
+*/
+
+// Second Solution
+function tournamentWinner(competitions, results) {
+  let champ = "";
+  const leaderboard = { "": 0 };
+
+  for (let i = 0; i < results.length; i++) {
+    const result = results[i];
+    const [home, away] = competitions[i];
+    const winner = result === 1 ? home : away;
+    updateLeaderboard(winner, 3, leaderboard);
+
+    if (leaderboard[winner] > leaderboard[champ]) {
+      champ = winner;
+    }
+  }
+
+  return champ;
+}
+
+function updateLeaderboard(team, points, leaderboard) {
+  if (!leaderboard[team]) {
+    leaderboard[team] = 3;
+  } else {
+    leaderboard[team] += 3;
+  }
 }
 
 module.exports = tournamentWinner;
