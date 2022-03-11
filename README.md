@@ -11,7 +11,7 @@ If you would like to work on these problems yourself follow these steps:
 - cd into the `algos` folder and enter `npm install` in your terminal.
 - use `npm run test` to run the tests
 
-Each problem is contained in its own folder with the correlating prompt, solution, and test script. Go to the respective folder to alter the solutions and tests.
+Each problem is contained in its own folder with the correlating prompt(`readme.md`), solution, and test script. Go to the respective folder to alter the solutions and tests.
 
 ### Dependencies
 
